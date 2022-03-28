@@ -49,9 +49,11 @@ $$
 \tilde \mu^f = \mu^{\text{mc}} \mu^f
 $$
 
-so that the firm *f*'s markup under oligopoly is increasing in its market share. Furthermore, firm *f*'s profit $\Pi^f$ is equal to the *market power factor* minus one: $\Pi^f = \mu^f - 1$. Firms are more likely to set a higher markup and gain a higher market share when they are of higher type or in a less competitive market. 
+so that the firm *f*'s markup under oligopoly is increasing in its market share. Furthermore, firm *f*'s profit $\Pi^f$ is linear and increasing in its *market power factor*: $\Pi^f = \mu^f - 1$. Firms are more likely to set a higher markup and gain a higher market share when they are of higher type or in a less competitive market. 
 
-$T^f$ is the firm *f*'s type. As $T^f$ increases (as synergies increase), firm *f*'s equilibrium markup, market share, and profit also increase; other firms' equilibrium markups, market shares, and profits respectively decrease, and consumer surplus and total surplus increase.
+ $T^f$ is the firm *f*'s type. As $T^f$ increases (as $\uparrow \alpha_i^f, \downarrow c_i^f, \dots$), firm *f*'s equilibrium markup, market share, and profit also increase; other firms' equilibrium markups, market shares, and profits respectively decrease, and consumer surplus and total surplus increase.
 
 # Modeling Mergers
+
+A merger involves *synergies* if the merged firms' post-merger type $T^M$ is greater than the sum of their pre-merger types: $T^M > \sum_{f \in M} T^f$. 
 
