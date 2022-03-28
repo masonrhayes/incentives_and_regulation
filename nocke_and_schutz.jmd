@@ -29,8 +29,29 @@ The authors show that there exists a cutoff post-merger type above which CS incr
 
 The assumption that firms compete across nests is a fundamental assumption of the model; however, it seems more natural to think of the nests as a collection of imperfectly substitutable products in some category, and that firms compete both across and within nests. For example, if a consumer is in the market for a beverage, it seems reasonable to assume that she chooses first what type of beverage she wants (soda, juice, or water, say) and then chooses what brand of beverage she wants. For example, the model of the paper would imply that soda from Pepsi is a closer substitute to juice from Pepsi than is soda from Coca-Cola. The authors make this assumption for tractability, but the assumption also has a direct impact on firm's strategic price-setting decision. 
 
-For the purposes of this short review, I will look only at the NMNL model. In this model, the economic environment can be summarized by the tuple corresponding to the number of (imperfectly substitutable) products N, number of nests L, number of firms F, product quality and product marginal cost: $(N, L, F, (\alpha_j)_{j \in N}, (c_j)_{j \in N})$, with nest parameter $β$ and elasticity parameter $λ$. When $β < 1$, the authors note that:
+For the purposes of this short review, I will look only at the NMNL model. In this model, the economic environment can be summarized by the tuple corresponding to the number of (imperfectly substitutable) products N, number of nests L, number of firms F, product quality and product marginal cost: $(N, L, F, (\alpha_j)_{j \in N}, (c_j)_{j \in N})$, with nest parameter $β$ and elasticity parameter $λ$. When $β < 1$ (i.e. when the nesting matters), the authors note that:
 
 > ``firm *f* internalizes self-cannibalization effects within its own nests, and it optimally sets a Lerner index that exceeds that in the absence of nests (p. 9, Nocke & Schutz, 2019)"
 
-This would clearly not be the case if nests took the form of product types. 
+This behavior would not be the same if products were nested by category and not by firm. The first order condition of profit maximization for product $i$ in nest $n$ of firm $f$ is given by:
+
+$$
+\dfrac{p_i - c_i}{p_i} \dfrac{p_i h_i''}{-h_i'} = 1 + (1-\beta) \dfrac{\sum_{j\in n} (p_j - c_j) (-h_j')}{H_n}
+$$
+
+where $H_n$ is the nest-level aggregator; so when $\beta < 1$, the firm accounts for the nest-level self-cannibalization effects. Nocke and Schutz (2019) call the left-hand side of this equation the $\iota$-markup on product $i$; under NMNL demand, this $\iota$-markup is the same for all products in and across nests, $\tilde \mu_n  =\frac{1}{1 + \beta} \equiv \mu^{\text{mc}}$, and absolute markup $p_i - c_i = \frac{\lambda }{\beta}$ under monopolistic competition. 
+
+##  Under Oligopoly
+
+Under oligopoly, firm *f* has $\iota$-markup that is equal to the monopolistically competitive $\iota$-markup $\tilde \mu_n$ multiplied by a *market power factor* $\mu^f = \frac{1}{1 - s^f}$:
+
+$$
+\tilde \mu^f = \mu^{\text{mc}} \mu^f
+$$
+
+so that the firm *f*'s markup under oligopoly is increasing in its market share. Furthermore, firm *f*'s profit $\Pi^f$ is equal to the *market power factor* minus one: $\Pi^f = \mu^f - 1$. Firms are more likely to set a higher markup and gain a higher market share when they are of higher type or in a less competitive market. 
+
+$T^f$ is the firm *f*'s type. As $T^f$ increases (as synergies increase), firm *f*'s equilibrium markup, market share, and profit also increase; other firms' equilibrium markups, market shares, and profits respectively decrease, and consumer surplus and total surplus increase.
+
+# Modeling Mergers
+
