@@ -4,7 +4,7 @@ author : Mason Ross Hayes
 institution: Toulouse School of Economics
 date: `j import Dates; Dates.Date(Dates.now())` 
 weave_options:
-  out_path: nocke_and_schutz/temp
+  out_path: submission/nocke&schutz
   doctype: md2pdf
 ---
 
