@@ -55,5 +55,20 @@ so that the firm *f*'s markup under oligopoly is increasing in its market share.
 
 # Modeling Mergers
 
-A merger involves *synergies* if the merged firms' post-merger type $T^M$ is greater than the sum of their pre-merger types: $T^M > \sum_{f \in M} T^f$. 
+When $H^*$ is the pre-merger value of the aggegator and $\bar H^*$ is the post-merger value, since CS is $log(H)$ then CS is increasing in H, and so the merger increases CS if $\bar H^* > H^*$. If the pre- and post-merger aggregators are equal (i.e. market shares of outsiders are unaffected), then CS is constant ($\bar H^* = H^*$).
 
+A merger is only CS-increasing if it has *synergies*, which it has if the merged firms' post-merger type $T^M$ is greater than the sum of their pre-merger types: $T^M > \sum_{f \in M} T^f$. There exists some cutoff type $\hat T^M$ above which the merger is CS-increasing,  $T^M > \hat T^M > \sum_{f \in M} T^f$. The synergies are allowed to take any form and are not necessarily restricted to reductions in marginal cost, as is traditionally the case. These synergies could be a rise in quality, the introduction of new products, or any mix. Due to the single-dimensionality of the firm type, these can vary in any arbitrary way and could potentially include such a *product-mix effect* as identified in Johnson & Rhodes (2021).
+
+These results lead to a key proposition of the paper: the post-merger cutoff type is *decreasing* in the pre-merger aggregator $H^*$. This means that, the higher is the CS before the merger (i.e. the more competitive is the market), the synergies required for the merger to be CS-increasing are lower. This effect takes place through two mechanisms: the pre-merger price is lower for a given $H^*$, and the diversion ratio is lower as well, since the diversion ratio is increasing in a firm's market share and therefore decreasing in the pre-merger aggregator. 
+
+Additionally, the authors find that for two merging firms, the required synergies of the merger are *increasing* in the pre-merger types of the firms. This is because firms with a high pre-merger type have a higher market share pre-merger and therefore a higher markup, which implies that post-merger the merged firm will have higher market share and benefit from greater diversion ratio among its products. 
+
+> Larger mergers require larger cost reductions to be CS-neutral. 
+
+The naively-computed change in HHI following a merger of firms $\{f, g\} \in M$ is increasing in the pre-merger market share of each firm and is given by: $\Delta^M HHI = 2 s^f s^g$. So, the required synergies for a merger to be CS-neutral are decreasing in the *pre-merger level of competition* and increasing in the *pre-merger types* of the merger firms.
+
+Finally, the authors show that a completely myopic merger policy is dynamically optimal, a result which holds for two reasons. Firstly, any merger which is (weakly) CS-increasing in the absense of any other mergers remains CS-increasing if another merger that is CS-increasing takes place; and, some mergers which are CS-decreasing in isolation are CS-increasing if they follow a CS-increasing merger. This is because a CS-increasing merger leads to a higher $H^*$ before the second merger. Given that second merger which was CS-decreasing in isolation was close to the threshold cutoff type, it may be above that threshold cutoff type following the first merger. 
+
+# Relevance of the paper
+
+The main results of Nocke & Schutz (2018) have been supported by empirical work as well: Alviarez et al. (2021) find that the increase in price is proportional to the increase in HHI resulting from a merger of firms selling beer or spirits. 
