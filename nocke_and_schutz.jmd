@@ -25,7 +25,9 @@ This assumption is important as it allows the model to be formulated as an aggre
 
 The authors show that there exists a cutoff post-merger type above which CS increases following the merger, and respectively decreases if the firm's post-merger type is below the cutoff. The authors also show that the firm's post-merger type is a function of the firm's market share in equilibrium (?). 
 
-# The Oligopoly Model
+# The Model
+
+## Monopolistic competition
 
 The assumption that firms compete across nests is a fundamental assumption of the model; however, it seems more natural to think of the nests as a collection of imperfectly substitutable products in some category, and that firms compete both across and within nests. For example, if a consumer is in the market for a beverage, it seems reasonable to assume that she chooses first what type of beverage she wants (soda, juice, or water, say) and then chooses what brand of beverage she wants. For example, the model of the paper would imply that soda from Pepsi is a closer substitute to juice from Pepsi than is soda from Coca-Cola. The authors make this assumption for tractability, but the assumption also has a direct impact on firm's strategic price-setting decision. 
 
@@ -41,7 +43,7 @@ $$
 
 where $H_n$ is the nest-level aggregator; so when $\beta < 1$, the firm accounts for the nest-level self-cannibalization effects. Nocke and Schutz (2019) call the left-hand side of this equation the $\iota$-markup on product $i$; under NMNL demand, this $\iota$-markup is the same for all products in and across nests, $\tilde \mu_n  =\frac{1}{1 + \beta} \equiv \mu^{\text{mc}}$, and absolute markup $p_i - c_i = \frac{\lambda }{\beta}$ under monopolistic competition. 
 
-##  Under Oligopoly
+## Oligopoly
 
 Under oligopoly, firm *f* has $\iota$-markup that is equal to the monopolistically competitive $\iota$-markup $\tilde \mu_n$ multiplied by a *market power factor* $\mu^f = \frac{1}{1 - s^f}$:
 
@@ -69,6 +71,21 @@ The naively-computed change in HHI following a merger of firms $\{f, g\} \in M$ 
 
 Finally, the authors show that a completely myopic merger policy is dynamically optimal, a result which holds for two reasons. Firstly, any merger which is (weakly) CS-increasing in the absense of any other mergers remains CS-increasing if another merger that is CS-increasing takes place; and, some mergers which are CS-decreasing in isolation are CS-increasing if they follow a CS-increasing merger. This is because a CS-increasing merger leads to a higher $H^*$ before the second merger. Given that second merger which was CS-decreasing in isolation was close to the threshold cutoff type, it may be above that threshold cutoff type following the first merger. 
 
-# Relevance of the paper
+# Context and relevance
 
-The main results of Nocke & Schutz (2018) have been supported by empirical work as well: Alviarez et al. (2021) find that the increase in price is proportional to the increase in HHI resulting from a merger of firms selling beer or spirits. 
+Mergers and acquisitions have long been an issue of interest to economists, competition authorities, and the public. Mergers and competition authorities' approval or rejection of them can have large and persistent impacts on consumer welfare, firm profits, product quality, technological innovation, and more. And the study of mergers, their potential effects, and optimal merger policies for competition authorities is a field of research that has only continued to grow. M&A activity has grown rapidly across the world, especially in the USA, over the previous 2 years since the beginning of the covid-19 pandemic. In the third quarter of 2021 alone, greater than 2,700 M&A deals worth 700 million USD were announced in the USA, representing 43 percent of the total M&A activity in the world that year (Emmerich, Stagliano, and D'Ginto 2021).
+
+As M&A proposals continue to grow in number and in value, it is important that competition authorties have not only a merger policy that is effective at protecting competition but also one that is simple and understandable by firms and consumers. This paper by Nocke & Schutz (2019) presents a simple and straightforward merger policy that is both competitive and fair: approve mergers which are likely to increase consumer surplus in the short run, and reject others. To determine the likely price effects of a given merger and the potential synergies, the *level* as well as the *change in* HHI are clear, simple, and informative measurements that competition authorities should use. 
+
+The main results of Nocke & Schutz (2019) have been supported by empirical work as well: Alviarez et al. (2021) find that the increase in price is proportional to the increase in HHI resulting from a merger of firms selling beer or spirits. The *product-mix effect* as identified in Johnson & Rhodes (2021) could be looked at as a particular case of a synergy corresponding to an increase in the merged firm's type $T^M$, in which case a fall in marginal cost is not necessary to increase consumer surplus. 
+
+Watson & Ziv (2021) apply the results of Nocke & Schutz (2019) in their analysis of the effect of zoning laws on landownership concentration and rents and find that ``with non-decreasing marginal costs, landowners with higher concentration always raise markups". Additionally, they find that, all else equal, an increase in one landowner's market share not only generates increases in the rents of all the landowner's parcels owns but also the rents of all parcels in the market. This result follows only if there are no economies of scale and no sorting. 
+
+Spiegel (2021) finds that the $HHI$ is reflects the ratio of industry profits to consumer surplus. 
+
+# Discussion
+
+This paper is interesting and relevant to firms, policymakers, and other stakeholders for the clear insights and intuition it provides. However, it relies strongly on the assumption of *type aggregation* from the nesting by firm rather than by product category, which would not permit an aggregative games approach. The finding that firms internalize the ``self-canibalization effect" due to nesting rests on the nesting structure - with a different nesting structure, firms may in fact lower markups to remain competitive within the nest. Since the assumption has a direct impact on firms' pricing decisions, the convenience of an aggregative games approach may not make a strong enough case to use this approach; a different nesting criteria may be more appropriate and lead to much different results.
+
+The authors briefly discuss this assumption and the implications of relaxing it; it seems, however, that the nesting by firm is done for the sake of tractability only. It is not clear how dropping this assumption would affect the results. 
+
