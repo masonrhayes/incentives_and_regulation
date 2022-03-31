@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<HTML lang = "en">
+<HEAD>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>A Report on Nocke and Schutz (2019)</title>
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+  </script>
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  
+<style>
+pre.hljl {
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    overflow-x: auto;
+    color: rgb(68,68,68); background-color: rgb(251,251,251); }
+pre.hljl > span.hljl-t { }
+pre.hljl > span.hljl-w { }
+pre.hljl > span.hljl-e { }
+pre.hljl > span.hljl-eB { }
+pre.hljl > span.hljl-o { }
+pre.hljl > span.hljl-k { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-kc { color: rgb(59,151,46); font-style: italic; }
+pre.hljl > span.hljl-kd { color: rgb(214,102,97); font-style: italic; }
+pre.hljl > span.hljl-kn { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-kp { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-kr { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-kt { color: rgb(148,91,176); font-weight: bold; }
+pre.hljl > span.hljl-n { }
+pre.hljl > span.hljl-na { }
+pre.hljl > span.hljl-nb { }
+pre.hljl > span.hljl-nbp { }
+pre.hljl > span.hljl-nc { }
+pre.hljl > span.hljl-ncB { }
+pre.hljl > span.hljl-nd { color: rgb(214,102,97); }
+pre.hljl > span.hljl-ne { }
+pre.hljl > span.hljl-neB { }
+pre.hljl > span.hljl-nf { color: rgb(66,102,213); }
+pre.hljl > span.hljl-nfm { color: rgb(66,102,213); }
+pre.hljl > span.hljl-np { }
+pre.hljl > span.hljl-nl { }
+pre.hljl > span.hljl-nn { }
+pre.hljl > span.hljl-no { }
+pre.hljl > span.hljl-nt { }
+pre.hljl > span.hljl-nv { }
+pre.hljl > span.hljl-nvc { }
+pre.hljl > span.hljl-nvg { }
+pre.hljl > span.hljl-nvi { }
+pre.hljl > span.hljl-nvm { }
+pre.hljl > span.hljl-l { }
+pre.hljl > span.hljl-ld { color: rgb(148,91,176); font-style: italic; }
+pre.hljl > span.hljl-s { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sa { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sb { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sc { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sd { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sdB { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sdC { color: rgb(201,61,57); }
+pre.hljl > span.hljl-se { color: rgb(59,151,46); }
+pre.hljl > span.hljl-sh { color: rgb(201,61,57); }
+pre.hljl > span.hljl-si { }
+pre.hljl > span.hljl-so { color: rgb(201,61,57); }
+pre.hljl > span.hljl-sr { color: rgb(201,61,57); }
+pre.hljl > span.hljl-ss { color: rgb(201,61,57); }
+pre.hljl > span.hljl-ssB { color: rgb(201,61,57); }
+pre.hljl > span.hljl-nB { color: rgb(59,151,46); }
+pre.hljl > span.hljl-nbB { color: rgb(59,151,46); }
+pre.hljl > span.hljl-nfB { color: rgb(59,151,46); }
+pre.hljl > span.hljl-nh { color: rgb(59,151,46); }
+pre.hljl > span.hljl-ni { color: rgb(59,151,46); }
+pre.hljl > span.hljl-nil { color: rgb(59,151,46); }
+pre.hljl > span.hljl-noB { color: rgb(59,151,46); }
+pre.hljl > span.hljl-oB { color: rgb(102,102,102); font-weight: bold; }
+pre.hljl > span.hljl-ow { color: rgb(102,102,102); font-weight: bold; }
+pre.hljl > span.hljl-p { }
+pre.hljl > span.hljl-c { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-ch { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-cm { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-cp { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-cpB { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-cs { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-csB { color: rgb(153,153,119); font-style: italic; }
+pre.hljl > span.hljl-g { }
+pre.hljl > span.hljl-gd { }
+pre.hljl > span.hljl-ge { }
+pre.hljl > span.hljl-geB { }
+pre.hljl > span.hljl-gh { }
+pre.hljl > span.hljl-gi { }
+pre.hljl > span.hljl-go { }
+pre.hljl > span.hljl-gp { }
+pre.hljl > span.hljl-gs { }
+pre.hljl > span.hljl-gsB { }
+pre.hljl > span.hljl-gt { }
+</style>
+
+
+
+  <style type="text/css">
+  @font-face {
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+}
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  font-family: monospace, monospace;
+  font-size : 0.8em;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+thead th {
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+tr:nth-child(odd){
+  background-color: rgb(248,248,248);
+}
+
+
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+html {
+  font-size: 62.5%; }
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+h1 { font-size: 3.6rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.4rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.2rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.8rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 2.4rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+p {
+  margin-top: 0; }
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #0FA0CE; }
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+ul {
+  list-style: circle; }
+ol {
+  list-style: decimal; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li > p {margin : 0;}
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+button,
+.button {
+  margin-bottom: 1rem; }
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 1.0rem; }
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre.hljl {
+  margin: 0 0 10px;
+  display: block;
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding : 5px;
+}
+
+pre.output {
+  background: #ffffff;
+}
+
+pre.code {
+  background: #ffffff;
+}
+
+pre.julia-error {
+  color : red
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+
+@media (min-width: 400px) {}
+@media (min-width: 550px) {}
+@media (min-width: 750px) {}
+@media (min-width: 1000px) {}
+@media (min-width: 1200px) {}
+
+h1.title {margin-top : 20px}
+img {max-width : 100%}
+div.title {text-align: center;}
+
+  </style>
+</HEAD>
+
+<BODY>
+  <div class ="container">
+    <div class = "row">
+      <div class = "col-md-12 twelve columns">
+        <div class="title">
+          <h1 class="title">A Report on Nocke and Schutz (2019)</h1>
+          <h5>Mason Ross Hayes</h5>
+          <h5>2022-03-31</h5>
+        </div>
+
+        
+<h1>Introduction</h1>
+<p>Nocke &amp; Schutz &#40;2019&#41; analyzes horizontal mergers in a model of multi-product price competition, differing from past literature which as focused primarily on single-product and homogeneous goods à la Cournot. The aim of the paper is to provide a framework for analyzing the welfare effects of mergers in a multi-product market, and to identify the conditions required for a given merger to remain CS-neutral or CS-increasing. Additionally, the authors provide conditions under which a myopic CS-based merger policy is dynamically optimal. </p>
+<p>One of their primary findings is that the market power effect of a merger is proportional to the <em>change in</em> the HHI, denoted as <span class="math">$\Delta HHI$</span>, following the merger. Moreover, consumer surplus and total surplus are functions of firms&#39; market shares in equilibrium.</p>
+<p>They use a model allowing for two cases: a nested constant elasticity of subsitution model &#40;NCES&#41;, and a nested multinomial logit model &#40;NMNL&#41;.<a href="#footnote-1" class="footnote">[1]</a> Quality and marginal cost can vary arbitrarily, but a key assumption of the model is that each nest is owned by a single firm, implying that firms compete <em>across</em> nests, not within nests. </p>
+<p>This assumption is important as it allows the model to be formulated as an aggregative game, which is a key component of the model. These assumptions also allow for <em>type aggregation</em>: all information about a firm&#39;s product portfolio is aggregated into a one-dimensional sufficient statistic. One advantage of this type aggregation property is that it allow potential synergies to take many different forms: merged firms&#39; marginal costs or qualities may go up or down, and new products can be introduced or old products retired from the market. Any of these potential effects can occur alone or all together and are entirely reflected in the firm&#39;s post-merger type, aggregating the different effects into a single-dimensional type.</p>
+<p>The authors show that there exists a cutoff post-merger type of the merged firm <span class="math">$\hat T^M$</span> above which CS increases following the merger, and respectively decreases if the merged firm&#39;s post-merger type is below the cutoff. The authors also show that the firm&#39;s post-merger type is a function of the firm&#39;s market share in equilibrium.</p>
+<div class="footnote" id="footnote-1"><p class="footnote-title">1</p><p>For the purposes of this short review, I will focus only on the NMNL model.</p>
+</div>
+<h1>The Model</h1>
+<h2>Monopolistic competition</h2>
+<p>In this model, the economic environment can be summarized by the tuple corresponding to the number of &#40;imperfectly substitutable&#41; products N, number of nests L, number of firms F, product quality and product marginal cost: <span class="math">$(N, L, F, (\alpha_j)_{j \in N}, (c_j)_{j \in N})$</span>, with nest parameter <span class="math">$β$</span> and elasticity parameter <span class="math">$λ$</span>. When <span class="math">$β < 1$</span> &#40;i.e. when the nesting matters&#41;, the authors note that:</p>
+<blockquote>
+<p>&#96;&#96;firm <em>f</em> internalizes self-cannibalization effects within its own nests, and it optimally sets a Lerner index that exceeds that in the absence of nests &#40;p. 9, Nocke &amp; Schutz, 2019&#41;&quot;</p>
+</blockquote>
+<p>This behavior would not be the same if products were nested by category and not by firm. The first order condition of profit maximization for product <span class="math">$i$</span> in nest <span class="math">$n$</span> of firm <span class="math">$f$</span> is given by:</p>
+<p class="math">\[
+\dfrac{p_i - c_i}{p_i} \dfrac{p_i h_i''}{-h_i'} = 1 + (1-\beta) \dfrac{\sum_{j\in n} (p_j - c_j) (-h_j')}{H_n}
+\]</p>
+<p>where <span class="math">$H_n$</span> is the nest-level aggregator; so when <span class="math">$\beta < 1$</span>, the firm accounts for the nest-level self-cannibalization effects. Nocke and Schutz &#40;2019&#41; call the left-hand side of this equation the <span class="math">$\iota$</span>-markup on product <span class="math">$i$</span>; under NMNL demand, this <span class="math">$\iota$</span>-markup is the same for all products in and across nests, <span class="math">$\tilde \mu_n  =\frac{1}{1 + \beta} \equiv \mu^{\text{mc}}$</span>, and absolute markup <span class="math">$p_i - c_i = \frac{\lambda }{\beta}$</span> under monopolistic competition. </p>
+<h2>Oligopoly</h2>
+<p>Under oligopoly, firm <em>f</em> has <span class="math">$\iota$</span>-markup that is equal to the monopolistically competitive <span class="math">$\iota$</span>-markup <span class="math">$\tilde \mu_n$</span> multiplied by a <em>market power factor</em> <span class="math">$\mu^f = \frac{1}{1 - s^f}$</span>:</p>
+<p class="math">\[
+\tilde \mu^f = \mu^{\text{mc}} \mu^f
+\]</p>
+<p>so that the firm <em>f</em>&#39;s markup under oligopoly is increasing in its market share.<a href="#footnote-2" class="footnote">[2]</a> Furthermore, firm <em>f</em>&#39;s profit <span class="math">$\Pi^f$</span> is linear and increasing in its <em>market power factor</em>: <span class="math">$\Pi^f = \mu^f - 1$</span>. Firms are more likely to set a higher markup and gain a higher market share when they are of higher type or in a less competitive market. </p>
+<p><span class="math">$T^f$</span> is the firm <em>f</em>&#39;s type. As <span class="math">$T^f$</span> increases &#40;as <span class="math">$\uparrow \alpha_i^f, \downarrow c_i^f, \dots$</span>&#41;, firm <em>f</em>&#39;s equilibrium markup, market share, and profit also increase; other firms&#39; equilibrium markups, market shares, and profits respectively decrease, and consumer surplus and total surplus increase.</p>
+<div class="footnote" id="footnote-2"><p class="footnote-title">2</p><p>Since under NMNL, <span class="math">$\alpha = 1$</span>.</p>
+</div>
+<h1>Modeling Mergers</h1>
+<p>When <span class="math">$H^*$</span> is the pre-merger value of the aggegator and <span class="math">$\bar H^*$</span> is the post-merger value, since CS is <span class="math">$log(H)$</span> then CS is increasing in H, and so the merger increases CS if <span class="math">$\bar H^* > H^*$</span>. If the pre- and post-merger aggregators are equal &#40;i.e. market shares of outsiders are unaffected&#41;, then CS is constant &#40;<span class="math">$\bar H^* = H^*$</span>&#41;.</p>
+<p>A merger is only CS-increasing if it has <em>synergies</em>, which it has if the merged firms&#39; post-merger type <span class="math">$T^M$</span> is greater than the sum of their pre-merger types: <span class="math">$T^M > \sum_{f \in M} T^f$</span>. There exists some cutoff type <span class="math">$\hat T^M$</span> above which the merger is CS-increasing,  <span class="math">$T^M > \hat T^M > \sum_{f \in M} T^f$</span>. The synergies are allowed to take any form and are not necessarily restricted to reductions in marginal cost, as is traditionally the case. These synergies could be a rise in quality, the introduction of new products, or any mix. Due to the single-dimensionality of the firm type, these can vary in any arbitrary way and could potentially include such a <em>product-mix effect</em> as identified in Johnson &amp; Rhodes &#40;2021&#41;.</p>
+<p>These results lead to a key proposition of the paper: the post-merger cutoff type is <em>decreasing</em> in the pre-merger aggregator <span class="math">$H^*$</span>. This means that, the higher is the CS before the merger &#40;i.e. the more competitive is the market&#41;, the synergies required for the merger to be CS-increasing are lower. This effect takes place through two mechanisms: the pre-merger price is lower for a given <span class="math">$H^*$</span>, and the diversion ratio is lower as well, since the diversion ratio is increasing in a firm&#39;s market share and therefore decreasing in the pre-merger aggregator. </p>
+<p>Additionally, the authors find that for two merging firms, the required synergies of the merger are <em>increasing</em> in the pre-merger types of the firms. This is because firms with a high pre-merger type have a higher market share pre-merger and therefore a higher markup, which implies that post-merger the merged firm will have higher market share and benefit from greater diversion ratio among its products. </p>
+<p>The naively-computed change in HHI following a merger of firms <span class="math">$\{f, g\} \in M$</span> is increasing in the pre-merger market share of each firm and is given by: <span class="math">$\Delta^M HHI = 2 s^f s^g$</span>. So, the required synergies for a merger to be CS-neutral are decreasing in the <em>pre-merger level of competition</em> and increasing in the <em>pre-merger types</em> of the merger firms.</p>
+<p>Finally, the authors show that a completely myopic merger policy is dynamically optimal, a result which holds for two reasons. Firstly, any merger which is &#40;weakly&#41; CS-increasing in the absense of any other mergers remains CS-increasing if another merger that is CS-increasing takes place; secondly, some mergers which are CS-decreasing in isolation are CS-increasing if they follow a CS-increasing merger. This is because a CS-increasing merger leads to a higher <span class="math">$H^*$</span> before the second merger. Given that the second merger which was CS-decreasing in isolation involved merging firms that were close to the threshold cutoff type, they may be above that threshold cutoff type following the first merger. </p>
+<h1>Context and relevance</h1>
+<p>Mergers and acquisitions have long been an issue of interest to economists, competition authorities, and the public. Mergers and competition authorities&#39; approval or rejection of them can have large and persistent impacts on consumer welfare, firm profits, product quality, technological innovation, and more. And the study of mergers, their potential effects, and optimal merger policies for competition authorities is a field of research that has only continued to grow. M&amp;A activity has grown rapidly across the world, especially in the USA, over the previous 2 years since the beginning of the covid-19 pandemic. In the third quarter of 2021 alone, greater than 2,700 M&amp;A deals worth 700 million USD were announced in the USA, representing 43 percent of the total M&amp;A activity in the world that year &#40;Emmerich, Stagliano, and D&#39;Ginto 2021&#41;.</p>
+<p>As M&amp;A proposals continue to grow in number and in value, it is important that competition authorties have not only a merger policy that is effective at protecting competition but also one that is simple and understandable by firms and consumers. The results of this paper present a clear method of analyzing the unilateral effects of mergers by showing that the market power effect of a merger is proportional to the naively-computed Herfindahl index. Through their analysis of a dynamic mergery policy, the authors also present a simple and straightforward merger policy for competition authorities to consider: approve mergers which are likely to increase consumer surplus in the short run, and reject others. To determine the likely price effects of a given merger and the potential synergies, the <em>level</em> as well as the <em>change in</em> HHI are clear, simple, and informative measurements that competition authorities should use, with the change in HHI being the most important metric.</p>
+<p>Later research has also given some support to the results of this paper, both empirically and theoretically. For example, Alviarez et al. &#40;2021&#41; find that following a merger of firms selling beer or spirits, the increase in price is proportional to the increase in HHI. As Nocke &amp; Schutz &#40;2019&#41; outline, for a merger to be CS-increasing it must involve synergies - the <em>product-mix effect</em> as identified in Johnson &amp; Rhodes &#40;2021&#41; could be looked at as a particular case of a synergy corresponding to an increase in the merged firm&#39;s type <span class="math">$T^M$</span>, in which case a fall in marginal cost is not necessary to increase consumer surplus. </p>
+<p>Watson &amp; Ziv &#40;2021&#41; apply the results of Nocke &amp; Schutz &#40;2019&#41; in their analysis of the effect of zoning laws on landownership concentration and rents and find that &#96;&#96;with non-decreasing marginal costs, landowners with higher concentration always raise markups&quot;. Additionally, they find that, all else equal, an increase in one landowner&#39;s market share not only generates increases in the rents of all the landowner&#39;s parcels owns but also the rents of all parcels in the market. This result follows only if there are no economies of scale and no sorting. </p>
+<p>Spiegel &#40;2021&#41; finds that the <span class="math">$HHI$</span> reflects well the ratio of industry profits to consumer surplus, implying that a large <span class="math">$\Delta HHI$</span> is associated with a large increase in the share of total surplus going to firms. This finding means that a given merger could induce a large <span class="math">$\Delta HHI$</span> and could be both profitable and CS-increasing, but that the increase in total industry profits is greater than the increase in consumer surplus. It could also potentially mean that the merger only leads to a very small increase in total industry profits, but that consumer surplus decreases; the actual changes in level of surplus will depend on the market conditions and the merger-specific synergies. </p>
+<h1>Discussion</h1>
+<p>This paper is part of a recent line of research providing evidence to justify the continued use of <span class="math">$HHI$</span> in merger policy, and tying changes in <span class="math">$HHI$</span> directly to welfare outcomes. It is interesting and relevant to firms, policymakers, and other stakeholders for the clear insights and intuition it provides. </p>
+<p>However, it relies strongly on the assumption of <em>type aggregation</em> from the nesting by firm rather than by product category, which would not permit an aggregative games approach. The finding that firms internalize the &#96;&#96;self-canibalization effect&quot; due to nesting rests on the nesting structure - with a different nesting structure, firms may in fact lower markups to remain competitive within the nest. Since the assumption has a direct impact on firms&#39; pricing decisions, the convenience of an aggregative games approach may not make a strong enough case to use this approach; a different nesting criteria may be more appropriate and lead to much different results. The assumption that firms compete <em>across</em> nests is a fundamental assumption of the model; however, it seems more natural to think of the nests as a collection of imperfectly substitutable products in some category, and that firms compete both across and within nests. For example, if a consumer is in the market for a beverage, it seems reasonable to assume that she chooses first what type of beverage she wants &#40;soda, juice, or water, say&#41; and then chooses what brand of beverage she wants. The model of the paper would imply that soda from Pepsi is a closer substitute to juice from Pepsi than is soda from Coca-Cola. The authors make this assumption for tractability, but the assumption also has a direct impact on firm&#39;s strategic price-setting decision. Further research may attempt to relax this assumption and examine how different nesting criteria affect the results. </p>
+<p>Current commonplace methods to evaluate the potential unilateral effects of mergers, such as upward pricing pressure &#40;UPP&#41;, may need to be revised - UPP is a very simple and useful method, but only allows for marginal cost reductions in its current form. Nocke &amp; Shutz &#40;2019&#41;, among others, including Johnson &amp; Rhodes &#40;2021&#41; have shown that potential synergies can come in the form of quality improvements, a product-mix effect, or the addition of new products. </p>
+<p>An &#96;&#96;updated&quot; UPP should take into account these various forms of potential synergies, and competition authorities should pay more attention to the change in <span class="math">$HHI$</span> of proposed mergers to evaluate what level of synergies are required to protect competition and not harm consumers.</p>
+<h1>References</h1>
+<p>Alviarez, Vanessa, Keith Head, and Thierry Mayer. 2021. &#96;&#96;Global Giants and Local Stars: How Changes in Brand Ownership Affect Competition.&quot; Inter-American Development Bank. https://doi.org/10.18235/0003333.</p>
+<p>Emmerich, Adam, Mark Stagliano, and Anna D&#39;Ginto. 2021. &#96;&#96;The Mergers &amp; Acquisitions Review: USA.&quot; In The Mergers &amp; Acquisitions Review. The Law Reviews.</p>
+<p>Johnson, Justin P., and Andrew Rhodes. 2021. &#96;&#96;Multiproduct Mergers and Quality Competition.&quot; The RAND Journal of Economics 52 &#40;3&#41;: 633-61. https://doi.org/10.1111/1756-2171.12386.</p>
+<p>Nocke, Volker, and Nicolas Schutz. 2018. &#96;&#96;An Aggregative Games Approach to Merger Analysis in Multiproduct-Firm Oligopoly.&quot; Working Paper 24578. Working Paper Series. National Bureau of Economic Research. https://doi.org/10.3386/w24578.</p>
+<p>Spiegel, Yossi. 2021. &#96;&#96;The Herfindahl-Hirschman Index and the Distribution of Social Surplus*.&quot; The Journal of Industrial Economics 69 &#40;3&#41;: 561-94. https://doi.org/10.1111/joie.12253.</p>
+<p>Watson, C. Luke, and Oren Ziv. 2021. &#96;&#96;Is the Rent Too High? Land Ownership and Monopoly Power.&quot; SSRN Electronic Journal. https://doi.org/10.2139/ssrn.3774672.</p>
+
+
+        <HR/>
+        <div class="footer">
+          <p>
+            Published from <a href="nocke_and_schutz.jmd">nocke_and_schutz.jmd</a>
+            using <a href="http://github.com/JunoLab/Weave.jl">Weave.jl</a> v0.10.10 on 2022-03-31.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BODY>
+
+</HTML>

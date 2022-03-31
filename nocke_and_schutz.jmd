@@ -1,5 +1,5 @@
 ---
-title : "Nocke and Schutz (2019): A Review"
+title : "A Report on Nocke and Schutz (2019)"
 author : Mason Ross Hayes
 institution: Toulouse School of Economics
 date: `j import Dates; Dates.Date(Dates.now())` 
@@ -15,23 +15,23 @@ Random.seed!(3)
 
 # Introduction
 
-Nocke & Schutz (2019) analyzes horizontal mergers in a model of multi-product price competition, differing from past literature on primarily single-product and homogeneous goods a la Cournot. The aim of the paper is to provide a framework for analyzing the welfare effects of mergers in a multi-product market, and identifying the synergies required to keep a given merger CS-neutral.
+Nocke & Schutz (2019) analyzes horizontal mergers in a model of multi-product price competition, differing from past literature which as focused primarily on single-product and homogeneous goods à la Cournot. The aim of the paper is to provide a framework for analyzing the welfare effects of mergers in a multi-product market, and to identify the conditions required for a given merger to remain CS-neutral or CS-increasing. Additionally, the authors provide conditions under which a myopic CS-based merger policy is dynamically optimal. 
 
-One of their primary findings is that the rise in price index following a merger is roughly linear in the *change in* the HHI, denoted as $\Delta HHI$, following the merger. Moreover, it is a function of the number of products in the market, and consumer surplus and total surplus are functions of firms' market shares in equilibrium.
+One of their primary findings is that the market power effect of a merger is proportional to the *change in* the HHI, denoted as $\Delta HHI$, following the merger. Moreover, consumer surplus and total surplus are functions of firms' market shares in equilibrium.
 
-They use a model similar to that of BLP (1995), with two cases: a nested constant elasticity of subsitution model (NCES), and a nested multinomial logit model (NMNL). Quality and marginal cost can vary arbitrarily, but a key assumption of the model is that each nest is owned by a single firm, implying that firms compete *across* nests, not within nests. 
+They use a model allowing for two cases: a nested constant elasticity of subsitution model (NCES), and a nested multinomial logit model (NMNL).[^1] Quality and marginal cost can vary arbitrarily, but a key assumption of the model is that each nest is owned by a single firm, implying that firms compete *across* nests, not within nests. 
 
-This assumption is important as it allows the model to be formulated as an aggregative game, which is a key component of the model. These assumptions also allow for *type aggregation*: all information about a firm's product portfolio is aggregated into a one-dimensional sufficient statistic. One advantage of this type aggregation property is that it allow potential synergies to take many different forms: merged firms' marginal costs or qualities may go up or down, and new products can be introduced or old products retired from the market. Any of these potential effects can occur alone or all together and are entirely reflected in the firm's post-merger type.
+This assumption is important as it allows the model to be formulated as an aggregative game, which is a key component of the model. These assumptions also allow for *type aggregation*: all information about a firm's product portfolio is aggregated into a one-dimensional sufficient statistic. One advantage of this type aggregation property is that it allow potential synergies to take many different forms: merged firms' marginal costs or qualities may go up or down, and new products can be introduced or old products retired from the market. Any of these potential effects can occur alone or all together and are entirely reflected in the firm's post-merger type, aggregating the different effects into a single-dimensional type.
 
-The authors show that there exists a cutoff post-merger type $\hat T^M$ above which CS increases following the merger, and respectively decreases if the firm's post-merger type is below the cutoff. The authors also show that the firm's post-merger type is a function of the firm's market share in equilibrium.
+The authors show that there exists a cutoff post-merger type of the merged firm $\hat T^M$ above which CS increases following the merger, and respectively decreases if the merged firm's post-merger type is below the cutoff. The authors also show that the firm's post-merger type is a function of the firm's market share in equilibrium.
+
+[^1]: For the purposes of this short review, I will focus only on the NMNL model.
 
 # The Model
 
 ## Monopolistic competition
 
-The assumption that firms compete across nests is a fundamental assumption of the model; however, it seems more natural to think of the nests as a collection of imperfectly substitutable products in some category, and that firms compete both across and within nests. For example, if a consumer is in the market for a beverage, it seems reasonable to assume that she chooses first what type of beverage she wants (soda, juice, or water, say) and then chooses what brand of beverage she wants. For example, the model of the paper would imply that soda from Pepsi is a closer substitute to juice from Pepsi than is soda from Coca-Cola. The authors make this assumption for tractability, but the assumption also has a direct impact on firm's strategic price-setting decision. 
-
-For the purposes of this short review, I will look only at the NMNL model. In this model, the economic environment can be summarized by the tuple corresponding to the number of (imperfectly substitutable) products N, number of nests L, number of firms F, product quality and product marginal cost: $(N, L, F, (\alpha_j)_{j \in N}, (c_j)_{j \in N})$, with nest parameter $β$ and elasticity parameter $λ$. When $β < 1$ (i.e. when the nesting matters), the authors note that:
+In this model, the economic environment can be summarized by the tuple corresponding to the number of (imperfectly substitutable) products N, number of nests L, number of firms F, product quality and product marginal cost: $(N, L, F, (\alpha_j)_{j \in N}, (c_j)_{j \in N})$, with nest parameter $β$ and elasticity parameter $λ$. When $β < 1$ (i.e. when the nesting matters), the authors note that:
 
 > ``firm *f* internalizes self-cannibalization effects within its own nests, and it optimally sets a Lerner index that exceeds that in the absence of nests (p. 9, Nocke & Schutz, 2019)"
 
@@ -51,9 +51,11 @@ $$
 \tilde \mu^f = \mu^{\text{mc}} \mu^f
 $$
 
-so that the firm *f*'s markup under oligopoly is increasing in its market share. Furthermore, firm *f*'s profit $\Pi^f$ is linear and increasing in its *market power factor*: $\Pi^f = \mu^f - 1$. Firms are more likely to set a higher markup and gain a higher market share when they are of higher type or in a less competitive market. 
+so that the firm *f*'s markup under oligopoly is increasing in its market share.[^2] Furthermore, firm *f*'s profit $\Pi^f$ is linear and increasing in its *market power factor*: $\Pi^f = \mu^f - 1$. Firms are more likely to set a higher markup and gain a higher market share when they are of higher type or in a less competitive market. 
 
  $T^f$ is the firm *f*'s type. As $T^f$ increases (as $\uparrow \alpha_i^f, \downarrow c_i^f, \dots$), firm *f*'s equilibrium markup, market share, and profit also increase; other firms' equilibrium markups, market shares, and profits respectively decrease, and consumer surplus and total surplus increase.
+
+[^2]: Since under NMNL, $\alpha = 1$.
 
 # Modeling Mergers
 
@@ -86,11 +88,11 @@ Spiegel (2021) finds that the $HHI$ reflects well the ratio of industry profits 
 
 This paper is part of a recent line of research providing evidence to justify the continued use of $HHI$ in merger policy, and tying changes in $HHI$ directly to welfare outcomes. It is interesting and relevant to firms, policymakers, and other stakeholders for the clear insights and intuition it provides. 
 
-However, it relies strongly on the assumption of *type aggregation* from the nesting by firm rather than by product category, which would not permit an aggregative games approach. The finding that firms internalize the ``self-canibalization effect" due to nesting rests on the nesting structure - with a different nesting structure, firms may in fact lower markups to remain competitive within the nest. Since the assumption has a direct impact on firms' pricing decisions, the convenience of an aggregative games approach may not make a strong enough case to use this approach; a different nesting criteria may be more appropriate and lead to much different results.Further research may attempt to relax this assumption and examine how different nesting criteria affect the results. 
+However, it relies strongly on the assumption of *type aggregation* from the nesting by firm rather than by product category, which would not permit an aggregative games approach. The finding that firms internalize the ``self-canibalization effect" due to nesting rests on the nesting structure - with a different nesting structure, firms may in fact lower markups to remain competitive within the nest. Since the assumption has a direct impact on firms' pricing decisions, the convenience of an aggregative games approach may not make a strong enough case to use this approach; a different nesting criteria may be more appropriate and lead to much different results. The assumption that firms compete *across* nests is a fundamental assumption of the model; however, it seems more natural to think of the nests as a collection of imperfectly substitutable products in some category, and that firms compete both across and within nests. For example, if a consumer is in the market for a beverage, it seems reasonable to assume that she chooses first what type of beverage she wants (soda, juice, or water, say) and then chooses what brand of beverage she wants. The model of the paper would imply that soda from Pepsi is a closer substitute to juice from Pepsi than is soda from Coca-Cola. The authors make this assumption for tractability, but the assumption also has a direct impact on firm's strategic price-setting decision. Further research may attempt to relax this assumption and examine how different nesting criteria affect the results. 
 
 Current commonplace methods to evaluate the potential unilateral effects of mergers, such as upward pricing pressure (UPP), may need to be revised - UPP is a very simple and useful method, but only allows for marginal cost reductions in its current form. Nocke & Shutz (2019), among others, including Johnson & Rhodes (2021) have shown that potential synergies can come in the form of quality improvements, a product-mix effect, or the addition of new products. 
 
-An ``updated" UPP should take into account these various forms of synergies, and competition authorities should pay more attention to the change in $HHI$ of proposed mergers to evaluate what level of synergies are required to protect competition and not harm consumers.
+An ``updated" UPP should take into account these various forms of potential synergies, and competition authorities should pay more attention to the change in $HHI$ of proposed mergers to evaluate what level of synergies are required to protect competition and not harm consumers.
 
 # References
 
