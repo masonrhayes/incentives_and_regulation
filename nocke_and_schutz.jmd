@@ -15,7 +15,7 @@ Random.seed!(3)
 
 # Introduction
 
-Nocke & Schutz (2019) analyzes horizontal mergers in a model of multi-product price competition (differing from past literature on primarily single-product and homogeneous goods a la Cournot). The aim of this paper is to provide a framework for analyzing the dynamics of mergers in a multi-product market. 
+Nocke & Schutz (2019) analyzes horizontal mergers in a model of multi-product price competition, differing from past literature on primarily single-product and homogeneous goods a la Cournot. The aim of the paper is to provide a framework for analyzing the welfare effects of mergers in a multi-product market, and identifying the synergies required to keep a given merger CS-neutral.
 
 One of their primary findings is that the rise in price index following a merger is roughly linear in the *change in* the HHI, denoted as $\Delta HHI$, following the merger. Moreover, it is a function of the number of products in the market, and consumer surplus and total surplus are functions of firms' market shares in equilibrium.
 
@@ -23,7 +23,7 @@ They use a model similar to that of BLP (1995), with two cases: a nested constan
 
 This assumption is important as it allows the model to be formulated as an aggregative game, which is a key component of the model. These assumptions also allow for *type aggregation*: all information about a firm's product portfolio is aggregated into a one-dimensional sufficient statistic. One advantage of this type aggregation property is that it allow potential synergies to take many different forms: merged firms' marginal costs or qualities may go up or down, and new products can be introduced or old products retired from the market. Any of these potential effects can occur alone or all together and are entirely reflected in the firm's post-merger type.
 
-The authors show that there exists a cutoff post-merger type above which CS increases following the merger, and respectively decreases if the firm's post-merger type is below the cutoff. The authors also show that the firm's post-merger type is a function of the firm's market share in equilibrium (?). 
+The authors show that there exists a cutoff post-merger type $\hat T^M$ above which CS increases following the merger, and respectively decreases if the firm's post-merger type is below the cutoff. The authors also show that the firm's post-merger type is a function of the firm's market share in equilibrium.
 
 # The Model
 
@@ -69,23 +69,40 @@ Additionally, the authors find that for two merging firms, the required synergie
 
 The naively-computed change in HHI following a merger of firms $\{f, g\} \in M$ is increasing in the pre-merger market share of each firm and is given by: $\Delta^M HHI = 2 s^f s^g$. So, the required synergies for a merger to be CS-neutral are decreasing in the *pre-merger level of competition* and increasing in the *pre-merger types* of the merger firms.
 
-Finally, the authors show that a completely myopic merger policy is dynamically optimal, a result which holds for two reasons. Firstly, any merger which is (weakly) CS-increasing in the absense of any other mergers remains CS-increasing if another merger that is CS-increasing takes place; and, some mergers which are CS-decreasing in isolation are CS-increasing if they follow a CS-increasing merger. This is because a CS-increasing merger leads to a higher $H^*$ before the second merger. Given that second merger which was CS-decreasing in isolation was close to the threshold cutoff type, it may be above that threshold cutoff type following the first merger. 
+Finally, the authors show that a completely myopic merger policy is dynamically optimal, a result which holds for two reasons. Firstly, any merger which is (weakly) CS-increasing in the absense of any other mergers remains CS-increasing if another merger that is CS-increasing takes place; secondly, some mergers which are CS-decreasing in isolation are CS-increasing if they follow a CS-increasing merger. This is because a CS-increasing merger leads to a higher $H^*$ before the second merger. Given that the second merger which was CS-decreasing in isolation involved merging firms that were close to the threshold cutoff type, they may be above that threshold cutoff type following the first merger. 
 
 # Context and relevance
 
 Mergers and acquisitions have long been an issue of interest to economists, competition authorities, and the public. Mergers and competition authorities' approval or rejection of them can have large and persistent impacts on consumer welfare, firm profits, product quality, technological innovation, and more. And the study of mergers, their potential effects, and optimal merger policies for competition authorities is a field of research that has only continued to grow. M&A activity has grown rapidly across the world, especially in the USA, over the previous 2 years since the beginning of the covid-19 pandemic. In the third quarter of 2021 alone, greater than 2,700 M&A deals worth 700 million USD were announced in the USA, representing 43 percent of the total M&A activity in the world that year (Emmerich, Stagliano, and D'Ginto 2021).
 
-As M&A proposals continue to grow in number and in value, it is important that competition authorties have not only a merger policy that is effective at protecting competition but also one that is simple and understandable by firms and consumers. This paper by Nocke & Schutz (2019) presents a simple and straightforward merger policy that is both competitive and fair: approve mergers which are likely to increase consumer surplus in the short run, and reject others. To determine the likely price effects of a given merger and the potential synergies, the *level* as well as the *change in* HHI are clear, simple, and informative measurements that competition authorities should use. 
+As M&A proposals continue to grow in number and in value, it is important that competition authorties have not only a merger policy that is effective at protecting competition but also one that is simple and understandable by firms and consumers. The results of this paper present a clear method of analyzing the unilateral effects of mergers by showing that the market power effect of a merger is proportional to the naively-computed Herfindahl index. Through their analysis of a dynamic mergery policy, the authors also present a simple and straightforward merger policy for competition authorities to consider: approve mergers which are likely to increase consumer surplus in the short run, and reject others. To determine the likely price effects of a given merger and the potential synergies, the *level* as well as the *change in* HHI are clear, simple, and informative measurements that competition authorities should use, with the change in HHI being the most important metric.
 
-The main results of Nocke & Schutz (2019) have been supported by empirical work as well: Alviarez et al. (2021) find that the increase in price is proportional to the increase in HHI resulting from a merger of firms selling beer or spirits. The *product-mix effect* as identified in Johnson & Rhodes (2021) could be looked at as a particular case of a synergy corresponding to an increase in the merged firm's type $T^M$, in which case a fall in marginal cost is not necessary to increase consumer surplus. 
+Later research has also given some support to the results of this paper, both empirically and theoretically. For example, Alviarez et al. (2021) find that following a merger of firms selling beer or spirits, the increase in price is proportional to the increase in HHI. As Nocke & Schutz (2019) outline, for a merger to be CS-increasing it must involve synergies - the *product-mix effect* as identified in Johnson & Rhodes (2021) could be looked at as a particular case of a synergy corresponding to an increase in the merged firm's type $T^M$, in which case a fall in marginal cost is not necessary to increase consumer surplus. 
 
 Watson & Ziv (2021) apply the results of Nocke & Schutz (2019) in their analysis of the effect of zoning laws on landownership concentration and rents and find that ``with non-decreasing marginal costs, landowners with higher concentration always raise markups". Additionally, they find that, all else equal, an increase in one landowner's market share not only generates increases in the rents of all the landowner's parcels owns but also the rents of all parcels in the market. This result follows only if there are no economies of scale and no sorting. 
 
-Spiegel (2021) finds that the $HHI$ is reflects the ratio of industry profits to consumer surplus. 
+Spiegel (2021) finds that the $HHI$ reflects well the ratio of industry profits to consumer surplus, implying that a large $\Delta HHI$ is associated with a large increase in the share of total surplus going to firms. This finding means that a given merger could induce a large $\Delta HHI$ and could be both profitable and CS-increasing, but that the increase in total industry profits is greater than the increase in consumer surplus. It could also potentially mean that the merger only leads to a very small increase in total industry profits, but that consumer surplus decreases; the actual changes in level of surplus will depend on the market conditions and the merger-specific synergies. 
+
 
 # Discussion
 
-This paper is interesting and relevant to firms, policymakers, and other stakeholders for the clear insights and intuition it provides. However, it relies strongly on the assumption of *type aggregation* from the nesting by firm rather than by product category, which would not permit an aggregative games approach. The finding that firms internalize the ``self-canibalization effect" due to nesting rests on the nesting structure - with a different nesting structure, firms may in fact lower markups to remain competitive within the nest. Since the assumption has a direct impact on firms' pricing decisions, the convenience of an aggregative games approach may not make a strong enough case to use this approach; a different nesting criteria may be more appropriate and lead to much different results.
+This paper is part of a recent line of research providing evidence to justify the continued use of $HHI$ in merger policy, and tying changes in $HHI$ directly to welfare outcomes. It is interesting and relevant to firms, policymakers, and other stakeholders for the clear insights and intuition it provides. 
 
-The authors briefly discuss this assumption and the implications of relaxing it; it seems, however, that the nesting by firm is done for the sake of tractability only. It is not clear how dropping this assumption would affect the results. 
+However, it relies strongly on the assumption of *type aggregation* from the nesting by firm rather than by product category, which would not permit an aggregative games approach. The finding that firms internalize the ``self-canibalization effect" due to nesting rests on the nesting structure - with a different nesting structure, firms may in fact lower markups to remain competitive within the nest. Since the assumption has a direct impact on firms' pricing decisions, the convenience of an aggregative games approach may not make a strong enough case to use this approach; a different nesting criteria may be more appropriate and lead to much different results.
 
+Further research may attempt to relax this assumption and examine how different nesting criteria affect the results. 
+
+# References
+
+Alviarez, Vanessa, Keith Head, and Thierry Mayer. 2021. ``Global Giants and Local Stars: How Changes in Brand Ownership Affect Competition." Inter-American Development Bank. https://doi.org/10.18235/0003333.
+
+Emmerich, Adam, Mark Stagliano, and Anna D'Ginto. 2021. ``The Mergers & Acquisitions Review: USA." In The Mergers & Acquisitions Review. The Law Reviews.
+
+Johnson, Justin P., and Andrew Rhodes. 2021. ``Multiproduct Mergers and Quality Competition." The RAND Journal of Economics 52 (3): 633-61. https://doi.org/10.1111/1756-2171.12386.
+
+Nocke, Volker, and Nicolas Schutz. 2018. ``An Aggregative Games Approach to Merger Analysis in Multiproduct-Firm Oligopoly." Working Paper 24578. Working Paper Series. National Bureau of Economic Research. https://doi.org/10.3386/w24578.
+
+
+Spiegel, Yossi. 2021. ``The Herfindahl-Hirschman Index and the Distribution of Social Surplus*." The Journal of Industrial Economics 69 (3): 561-94. https://doi.org/10.1111/joie.12253.
+
+Watson, C. Luke, and Oren Ziv. 2021. ``Is the Rent Too High? Land Ownership and Monopoly Power." SSRN Electronic Journal. https://doi.org/10.2139/ssrn.3774672.
