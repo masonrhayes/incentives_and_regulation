@@ -65,8 +65,6 @@ These results lead to a key proposition of the paper: the post-merger cutoff typ
 
 Additionally, the authors find that for two merging firms, the required synergies of the merger are *increasing* in the pre-merger types of the firms. This is because firms with a high pre-merger type have a higher market share pre-merger and therefore a higher markup, which implies that post-merger the merged firm will have higher market share and benefit from greater diversion ratio among its products. 
 
-> Larger mergers require larger cost reductions to be CS-neutral. 
-
 The naively-computed change in HHI following a merger of firms $\{f, g\} \in M$ is increasing in the pre-merger market share of each firm and is given by: $\Delta^M HHI = 2 s^f s^g$. So, the required synergies for a merger to be CS-neutral are decreasing in the *pre-merger level of competition* and increasing in the *pre-merger types* of the merger firms.
 
 Finally, the authors show that a completely myopic merger policy is dynamically optimal, a result which holds for two reasons. Firstly, any merger which is (weakly) CS-increasing in the absense of any other mergers remains CS-increasing if another merger that is CS-increasing takes place; secondly, some mergers which are CS-decreasing in isolation are CS-increasing if they follow a CS-increasing merger. This is because a CS-increasing merger leads to a higher $H^*$ before the second merger. Given that the second merger which was CS-decreasing in isolation involved merging firms that were close to the threshold cutoff type, they may be above that threshold cutoff type following the first merger. 
@@ -88,9 +86,11 @@ Spiegel (2021) finds that the $HHI$ reflects well the ratio of industry profits 
 
 This paper is part of a recent line of research providing evidence to justify the continued use of $HHI$ in merger policy, and tying changes in $HHI$ directly to welfare outcomes. It is interesting and relevant to firms, policymakers, and other stakeholders for the clear insights and intuition it provides. 
 
-However, it relies strongly on the assumption of *type aggregation* from the nesting by firm rather than by product category, which would not permit an aggregative games approach. The finding that firms internalize the ``self-canibalization effect" due to nesting rests on the nesting structure - with a different nesting structure, firms may in fact lower markups to remain competitive within the nest. Since the assumption has a direct impact on firms' pricing decisions, the convenience of an aggregative games approach may not make a strong enough case to use this approach; a different nesting criteria may be more appropriate and lead to much different results.
+However, it relies strongly on the assumption of *type aggregation* from the nesting by firm rather than by product category, which would not permit an aggregative games approach. The finding that firms internalize the ``self-canibalization effect" due to nesting rests on the nesting structure - with a different nesting structure, firms may in fact lower markups to remain competitive within the nest. Since the assumption has a direct impact on firms' pricing decisions, the convenience of an aggregative games approach may not make a strong enough case to use this approach; a different nesting criteria may be more appropriate and lead to much different results.Further research may attempt to relax this assumption and examine how different nesting criteria affect the results. 
 
-Further research may attempt to relax this assumption and examine how different nesting criteria affect the results. 
+Current commonplace methods to evaluate the potential unilateral effects of mergers, such as upward pricing pressure (UPP), may need to be revised - UPP is a very simple and useful method, but only allows for marginal cost reductions in its current form. Nocke & Shutz (2019), among others, including Johnson & Rhodes (2021) have shown that potential synergies can come in the form of quality improvements, a product-mix effect, or the addition of new products. 
+
+An ``updated" UPP should take into account these various forms of synergies, and competition authorities should pay more attention to the change in $HHI$ of proposed mergers to evaluate what level of synergies are required to protect competition and not harm consumers.
 
 # References
 
