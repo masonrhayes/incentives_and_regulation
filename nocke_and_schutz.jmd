@@ -17,7 +17,7 @@ Random.seed!(3)
 
 Nocke & Schutz (2019) analyzes horizontal mergers in a model of multi-product price competition, differing from past literature which as focused primarily on single-product and homogeneous goods à la Cournot. The aim of the paper is to provide a framework for analyzing the welfare effects of mergers in a multi-product market, and to identify the conditions required for a given merger to remain CS-neutral or CS-increasing. Additionally, the authors provide conditions under which a myopic CS-based merger policy is dynamically optimal. 
 
-One of their primary findings is that the market power effect of a merger is proportional to the *change in* the HHI, denoted as $\Delta HHI$, following the merger. Moreover, consumer surplus and total surplus are functions of firms' market shares in equilibrium.
+One of their primary findings is that the market power effect of a merger is proportional to the *change in* the HHI, denoted as $\Delta^M HHI$, following the merger. Moreover, consumer surplus and total surplus are functions of firms' market shares in equilibrium.
 
 They use a model allowing for two cases: a nested constant elasticity of subsitution model (NCES), and a nested multinomial logit model (NMNL).[^1] Quality and marginal cost can vary arbitrarily, but a key assumption of the model is that each nest is owned by a single firm, implying that firms compete *across* nests, not within nests. 
 
