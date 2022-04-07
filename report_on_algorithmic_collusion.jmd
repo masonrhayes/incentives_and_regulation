@@ -22,18 +22,20 @@ Using simple pricing algorithms that respond to market conditions in a certain p
 
 The use of pricing algorithms can facilitate both horizontal and vertical collusion, for example, by making it easier to detect deviations or by reducing margin of error in estimating demand. While the growing ubiquity and availability of ``big data" has reduced the costs of creating, deploying, and updating advanced predictive and reactive technologies, which can have many procompetitive benefits - for example, improving the quality of firms' product offerings or by allowing firms to tailor their products to consumers' tastes - the rapid reactive capabilities of automated processes may facilitate supra-competitive pricing. 
 
+Although there is much research indicating that self-learning algorithms can reach collusive outcomes, there is no real-world example of such cases occurring. Some economists have expressed that the concerns that current antitrust law is inadequate to address potential cases of algorithmic collusion are overblown, especially considering the lack of evidence of real-world cases of algorithmic collusion.[^1].
 
+[^1]: See Veljanovski (2020)
 
 
 # Do pricing algorithms facilitate tacit collusion? 
 
-It is possible that pricing algorithms learn to coordinate without any human being programmed to do so, and could potentially control and facilitate punishment for collusive deviations, a finding supported by Calvano et al (2019). Market asymmetries and uncertainty in demand or costs can prevent or reduce the likelihood of market collusion through the use of pricing algorithms, as shown by Mikos-Thal et al (2018).[^1] In each of these situations, the likelihood and the stability of collusive pricing depend on very specific conditions, such as widespread use of the same algorithm by the other firms, a certain level of sophistication and access to data, the uncertainty of the market conditions, and more. Pricing algorithms can also facilitate collusion is by increasing price transparency and decreasing reaction times to competitors' deviations, making collusive pricing more understandable to the market participants and making deviations less profitable.
+It is possible that pricing algorithms learn to coordinate without any human being programmed to do so, and could potentially control and facilitate punishment for collusive deviations, a finding supported by Calvano et al (2019). Market asymmetries and uncertainty in demand or costs can prevent or reduce the likelihood of market collusion through the use of pricing algorithms, as shown by Mikos-Thal et al (2018).[^2] In each of these situations, the likelihood and the stability of collusive pricing depend on very specific conditions, such as widespread use of the same algorithm by the other firms, a certain level of sophistication and access to data, the uncertainty of the market conditions, and more. Pricing algorithms can also facilitate collusion is by increasing price transparency and decreasing reaction times to competitors' deviations, making collusive pricing more understandable to the market participants and making deviations less profitable.
 
-[^1]: Miklo-Thal et al (2018) assume that firms follow a grim trigger strategy to punish deviations from the collusive pricing policy.
+[^2]: Miklo-Thal et al (2018) assume that firms follow a grim trigger strategy to punish deviations from the collusive pricing policy.
 
-Klein 2021, supporting the findings of Calvano et al (2019), shows that competing reinforcement learning algorithms can learn to collude when prices are set sequentially.[^2] Furthermore, when the set of possible prices is discrete, the level of collusion is rising in the number of possible prices in the interval. The intuition behind this is that a greater set of possible prices allows a firm to be more precise in its reward-punishment scheme - it can play closer to the optimal competitive price if a rival deviates from the collusive strategy, and closer to the optimal collusive price in equilibrium.
+Klein 2021, supporting the findings of Calvano et al (2019), shows that competing reinforcement learning algorithms can learn to collude when prices are set sequentially.[^3] Furthermore, when the set of possible prices is discrete, the level of collusion is rising in the number of possible prices in the interval. The intuition behind this is that a greater set of possible prices allows a firm to be more precise in its reward-punishment scheme - it can play closer to the optimal competitive price if a rival deviates from the collusive strategy, and closer to the optimal collusive price in equilibrium.
 
-[^2]: Calvano et al. (2019) show that competing reinforcement learning algorithms can learn to colude under a simultaneous-pricing environment
+[^3]: Calvano et al. (2019) show that competing reinforcement learning algorithms can learn to colude under a simultaneous-pricing environment
 
 Harrington (2020) finds that third-party development of pricing algorithm has an anticompetitive effect even if only one firm uses it, since any third-party algorithm developer would have an incentive to design a less competitive algorithm. These findings suggest that competition authorities should pay extra attention to markets where firms are using the same pricing algorithms, or even superficially different algorithms that are nonetheless developed by the same third-party firm. 
 
@@ -59,12 +61,12 @@ If market participants are aware of the algorithms used by their competitors, su
 
 # The Regulation of Algorithm Use
 
-In the case that algorithms are ``told" to engage in some type of anticompetitive coordinated behavior, the legal ramifications are quite straightforward - in the USA, for example, such cases of overt collusion using algorithmic pricing have been tried, such as *United States v. Topkins*, since regardless of the method used, this is a clear violation of section 1 of the Sherman Antitrust Act.[^3] 
+In the case that algorithms are ``told" to engage in some type of anticompetitive coordinated behavior, the legal ramifications are quite straightforward - in the USA, for example, such cases of overt collusion using algorithmic pricing have been tried, such as *United States v. Topkins*, since regardless of the method used, this is a clear violation of section 1 of the Sherman Antitrust Act.[^4] 
 
 While it is not necessarily an inevitable outcome, there are certain conditions under which algorithms may learn to collude without anyone's explicit directions to do so. This is where a large part of the concern of regulators lies - how can competition authorities prevent or ameliorate such anticompetitive behavior from firms when there is a weaker legal basis for doing so? Section 5 of othe FTC Act might allow to classify such algorithmic collusion as an ``unfair method of competition," though no case has yet been filed by the FTC or DOJ invoking only Section 5, partially due to precedent.
 
 
-[^3]: https://www.justice.gov/atr/case/us-v-david-topkins
+[^4]: https://www.justice.gov/atr/case/us-v-david-topkins
 
 
 # Conclusion 
@@ -73,3 +75,28 @@ There is an emerging legal and economic literature studying algorithmic pricing,
 
 Competition authorities must distinguish between the use of algorithms to detect and punish existing agreements (overt collusion) and the use of algorithms that lead to coordinated pricing without the parties' knowledge (tacit collusion). In the case of tacit collusion, the FTC may not be able to invoke the Sherman Antitrust Act, and instead may have to rely on Section 5 of the FTC Act. 
 
+# References
+
+Brown, Zach Y, and Alexander MacKay. n.d. ``Competition in Pricing Algorithms," 67.
+
+Calvano, Emilio, Giacomo Calzolari, Vincenzo Denicolò, and Sergio Pastorello. 2019. ``Artificial Intelligence, Algorithmic Pricing and Collusion." SSRN Scholarly Paper ID 3304991. Rochester, NY: Social Science Research Network. https://doi.org/10.2139/ssrn.3304991.
+
+Deng, Ai. 2018. ``What Do We Know About Algorithmic Tacit Collusion?" SSRN Electronic Journal. https://doi.org/10.2139/ssrn.3171315.
+
+Harrington, Joseph E. 2018. ``Developing Competition Law for Collusion by Autonomous Artificial Agents," 82.
+
+Harrington Jr, Joseph E. 2020. ``Third Party Pricing Algorithms and the Intensity of Competition." SSRN Electronic Journal. https://doi.org/10.2139/ssrn.3723997.
+
+Johnson, Justin, and D. Daniel Sokol. 2020. ``Understanding AI Collusion and Compliance." SSRN Scholarly Paper 3413882. Rochester, NY: Social Science Research Network. https://papers.ssrn.com/abstract=3413882.
+
+Mazumdar, Aneesa. 2022. ``Algorithmic Collusion: Reviving Section 5 of the FTC Act." Columbia Law Review 122: 40.
+
+Miklós-Thal, Jeanine, and Catherine E. Tucker. 2018. ``Collusion by Algorithm: Does Better Demand Prediction Facilitate Coordination Between Sellers?" SSRN Scholarly Paper ID 3261273. Rochester, NY: Social Science Research Network. https://doi.org/10.2139/ssrn.3261273.
+
+Normann, Hans-Theo, and Martin Sternberg. 2021. ``Human-Algorithm Interaction: Algorithmic Pricing in Hybrid Laboratory Markets." SSRN Scholarly Paper 3840789. Rochester, NY: Social Science Research Network. https://doi.org/10.2139/ssrn.3840789.
+
+O'Connor, Jason, and Nathan Wilson. 2019. ``Reduced Demand Uncertainty and the Sustainability of Collusion: How AI Could Affect Competition." SSRN Scholarly Paper 3406834. Rochester, NY: Social Science Research Network. https://doi.org/10.2139/ssrn.3406834.
+
+Salcedo, Bruno. 2015. ``Pricing Algorithms and Tacit Collusion," 30.
+
+Veljanovski, Cento. 2020. ``Pricing Algorithms as Collusive Devices." SSRN Scholarly Paper 3644360. Rochester, NY: Social Science Research Network. https://doi.org/10.2139/ssrn.3644360.
